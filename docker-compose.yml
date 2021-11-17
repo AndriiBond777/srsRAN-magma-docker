@@ -8,6 +8,8 @@ services:
     cap_add:
       - SYS_NICE
     command: srsenb
+      --enb.mcc = 999
+      --enb.mnc = 99
       --enb.mme_addr=10.0.2.1
       --enb.gtp_bind_addr=10.0.2.2
       --enb.s1c_bind_addr=10.0.2.2
